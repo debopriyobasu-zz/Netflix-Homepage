@@ -1,0 +1,89 @@
+body,html{
+    background-color: #f3f3f3;
+    color: #333;
+    font-size: 16px;
+    direction: ltr;
+    margin:0;
+    padding:0;
+    border:0;
+    height:100%;
+    width:100%;
+}
+.our-story-header-wrapper{
+    background-color: transparent;
+    position:relative;
+    z-index:9;
+    margin: 0 auto;
+    max-width: 1920px;
+    padding-top: 20px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 5rem;
+}
+@media only screen and (max-width: 949px) and (min-width: 550px), only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px){
+    .our-story-header-wrapper {
+        height: 45px;
+    }
+}
+@media only screen and (max-width: 1449px) and (min-width: 950px){
+    .our-story-header-wrapper {
+        height: 4rem;
+    }
+}
+.our-story-header{
+    display: block;
+}
+@media only screen and (max-width: 949px) and (min-width: 550px){
+    .our-story-header {
+        margin: 0 45px;
+    }
+}
+@media only screen and (min-width: 950px){
+    .our-story-header {
+        margin: 0 56px;
+    }
+}
+@media only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px){
+    .our-story-header {
+    margin: 0 5%;
+    }
+}
+@media only screen and (max-width: 1449px) and (min-width: 950px){
+    .netflix-logo {
+        height: 36px;
+        width: 134px;
+    }
+    .netflix-logo img{
+        max-height: 100%;
+        width: 100%;
+        object-fit: contain; 
+    }
+}
+@media only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px){
+    .netflix-logo {
+        height: 24px;
+        width: 30%;
+    }
+    .netflix-logo img{
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain; 
+    }
+}
+.concord-img-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index:1;
+}
+.concord-img{
+    transform: none;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
