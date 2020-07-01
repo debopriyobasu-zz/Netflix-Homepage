@@ -1,0 +1,279 @@
+@font-face{
+    font-family:"Netflix Sans";
+    src: url('resources/fonts/NetflixSans_W_Rg.woff2') format("woff2");
+}
+body{
+    background-color: #f3f3f3;
+    color: #333;
+    font-size: 16px;
+    margin: 0px;
+    padding:0;
+    border:0;
+    height:100%;
+    width:100%;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.our-story-container{
+    width:100%;
+    height:auto;
+}
+/* -----------------------------------------------------header wrapper------------------------------------------------------------------ */
+.our-story-header-wrapper{
+    background-color: transparent;
+    position:relative;
+    z-index:9;
+    margin: 0 auto;
+    max-width: 1920px;
+    padding-top: 20px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 5rem;
+}
+@media only screen and (max-width: 949px) and (min-width: 550px), only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px){
+    .our-story-header-wrapper {
+        height: 45px;
+    }
+}
+@media only screen and (max-width: 1449px) and (min-width: 950px){
+    .our-story-header-wrapper {
+        height: 4rem;
+    }
+}
+
+/* ------------------------------------------------------header---------------------------------------------------------------------- */
+.our-story-header{
+    display: block;
+}
+@media only screen and (max-width: 949px) and (min-width: 550px){
+    .our-story-header {
+        margin: 0 45px;
+    }
+}
+@media only screen and (min-width: 950px){
+    .our-story-header {
+        margin: 0 56px;
+    }
+}
+@media only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px){
+    .our-story-header {
+    margin: 0 5%;
+    }
+}
+/* -------------------------------------------------------netflix logo-------------------------------------------------------------- */
+.netflix-logo{
+    padding-top:8px;
+    float:left;
+}
+@media only screen and (min-width:1450px){
+    .netflix-logo {
+        height: 45px;
+        width: 166.5px;
+    }
+    .netflix-logo img{
+        max-height: 100%;
+        width: 100%;
+        object-fit: contain; 
+    }
+}
+@media only screen and (max-width: 1449px) and (min-width: 950px){
+    .netflix-logo {
+        height: 36px;
+        width: 134px;
+    }
+    .netflix-logo img{
+        max-height: 100%;
+        width: 100%;
+        object-fit: contain; 
+    }
+}
+@media only screen and (max-width: 949px) and (min-width: 550px){
+    .netflix-logo {
+        height: 32px;
+        width: 108px;
+    }
+    .netflix-logo img{
+        max-height: 100%;
+        width: 100%;
+        object-fit: contain; 
+    }
+
+}
+
+@media only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px){
+    .netflix-logo {
+        height: 24px;
+        width: 30%;
+    }
+    .netflix-logo img{
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain; 
+    }
+}
+/* -------------------------------------------------------Sign In button----------------------------------------------------------------- */
+.redButton{
+    background-color: #e50914;
+    line-height: normal;
+    padding: 7px 17px;
+    font-weight: 400;
+    font-size: 1rem;
+    float: right;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 3px;
+    margin-top: .5rem;
+    cursor: pointer;
+}
+@media only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px){
+    .redButton {
+        font-size: .9rem;
+        margin-top: .35rem;
+        padding: .25rem .5rem;
+    }
+}
+/* ---------------------------------------------background cover image------------------------------------------------------------ */
+.concord-img-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index:1;
+    width: auto;
+    object-fit: cover;
+}
+.concord-img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+.concord-img-gradient{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0,0,0,.4);
+    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+}
+@media only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px){
+    .concord-img-wrapper{
+        height:492px;
+    }
+}
+@media only screen and (max-width: 549px) and (min-width: 400px){
+    .concord-img-wrapper{
+        height: 500px;
+    }
+}
+@media only screen and (max-width: 588px) and (min-width: 550px){
+    .concord-img-wrapper{
+        height: 785px;
+    }
+}
+@media only screen and (max-width: 722px) and (min-width: 589px){
+    .concord-img-wrapper{
+        height: 730px;
+    }
+}
+@media only screen and (max-width: 931px) and (min-width: 723px){
+    .concord-img-wrapper{
+        height: 754px;
+    }
+}
+@media only screen and (max-width: 1430px) and (min-width: 932px){
+    .concord-img-wrapper{
+        height: 705.594px;
+    }
+}
+@media only screen and (min-width: 1431px){
+    .concord-img-wrapper{
+        height: 745.594px;
+    }
+}
+/* ---------------------------------------------------our story card text------------------------------------------------------- */
+.our-story-card-text{
+    position: relative;
+    width: 100%;
+    padding: 75px 0;
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+    /* display:flex;
+    justify-content: center;
+    align-items: center; */
+}
+/* -----------------------------------------------------our story card title----------------------------------------------------------- */
+.our-story-card-title{
+    line-height: 1.1;
+    max-width: 640px;
+    margin: 0 auto;
+}
+@media only screen and (min-width: 1450px){
+    .our-story-card-title {
+        font-size: 4rem;
+    }
+}
+@media only screen and (max-width: 949px) and (min-width: 550px), only screen and (max-width:1449px) and (min-width:950px) {
+    .our-story-card-title {
+        font-size: 3.125rem;
+    }
+}
+@media only screen and (max-width: 550px){
+    .our-story-card-title {
+        font-size: 1.75rem;
+    }
+}
+/* -------------------------------------------------------our story card subtitle----------------------------------------------------------- */
+.our-story-card-subtitle{
+    max-width: 640px;
+    margin: 1rem auto;
+    font-weight: 400;
+}
+@media only screen and (max-width: 1449px) and (min-width: 950px), only screen and (min-width: 1450px),only screen and (max-width: 949px) and (min-width: 550px){
+    .our-story-card-subtitle, .our-story-card-text {
+        font-size: 1.625rem;
+    }
+}
+@media only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px){
+    .our-story-card-subtitle,.our-story-card-text{
+        font-size: 1.125rem;
+    }
+}
+h2{
+    font-size:20px;
+    display: block;
+    /* font-size: 1.5em; */
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+@media screen and (min-width: 740px){
+    h2 {
+        font-size: 27px;
+    }
+}
+/* ---------------------------------------------------------email form---------------------------------------------------------------- */
+form {
+    margin-top: 0em;
+}
+@media only screen and (max-width: 1449px) and (min-width: 950px), only screen and (min-width: 1450px){
+    .email-form {
+        max-width: 950px;
+        padding-top: .85rem;
+        display: flex;
+        flex-flow: column-reverse;
+    }
+    .email-form-title {
+        max-width: none;
+        padding: 0;
+        font-size: 1.2rem;
+    }
+}
+
+
