@@ -16,10 +16,22 @@ body{
 .our-story-container{
     width:100%;
     height:auto;
+    
+}
+/* .our-story-card{
+
+    border-bottom: 8px solid #222;
+} */
+.only-desktop{
+    display: none;
+}
+.only-mobile{
+    display: block;
 }
 /* -----------------------------------------------------header wrapper------------------------------------------------------------------ */
 .our-story-header-wrapper{
     background-color: transparent;
+    transition: background-color .5s;
     position:relative;
     z-index:9;
     margin: 0 auto;
@@ -160,12 +172,12 @@ body{
 }
 @media only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px){
     .concord-img-wrapper{
-        height:492px;
+        height:523px;
     }
 }
 @media only screen and (max-width: 549px) and (min-width: 400px){
     .concord-img-wrapper{
-        height: 500px;
+        height: 530px;
     }
 }
 @media only screen and (max-width: 588px) and (min-width: 550px){
@@ -193,6 +205,15 @@ body{
         height: 745.594px;
     }
 }
+/* -----------------------------------------------------our story card---------------------------------------------------------- */
+.our-story-card{
+    position: relative;
+    border-bottom: 8px solid #222;
+    padding: 50px 5%;
+    margin-bottom: 0;
+    background: 0 0;
+    color: #fff;
+}
 /* ---------------------------------------------------our story card text------------------------------------------------------- */
 .our-story-card-text{
     position: relative;
@@ -203,10 +224,24 @@ body{
     text-align: center;
     z-index: 1;
     color: #fff;
-    /* display:flex;
-    justify-content: center;
-    align-items: center; */
 }
+@media only screen and (max-width: 549px) and (min-width: 400px){
+    .our-story-card-text{
+        padding: 30px 0;
+    }
+} 
+@media only screen and (max-width: 399px) and (min-width: 350px){
+    .our-story-card-text {
+        padding: 15px 0;
+    }
+}
+
+@media only screen and (max-width: 349px){
+    .our-story-card-text {
+        padding: 0;
+    }
+}
+
 /* -----------------------------------------------------our story card title----------------------------------------------------------- */
 .our-story-card-title{
     line-height: 1.1;
@@ -243,6 +278,9 @@ body{
     .our-story-card-subtitle,.our-story-card-text{
         font-size: 1.125rem;
     }
+    .our-story-card-subtitle{
+        width:inherit;
+    }
 }
 h2{
     font-size:20px;
@@ -266,14 +304,204 @@ form {
     .email-form {
         max-width: 950px;
         padding-top: .85rem;
-        display: flex;
-        flex-flow: column-reverse;
     }
+}
+.email-form-title {
+    padding: 0 5%;
+    max-width: 450px;
+    margin: 0 auto;
+    font-weight: 400;
+    color: #fff;
+}
+@media only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 949px) and (min-width: 550px){
+    .email-form-title {
+        padding: 0 10%;
+    }
+}
+h3 {
+    font-size: 18px;
+}
+@media screen and (min-width: 740px){
+    h3 {
+        font-size: 23px;
+    }
+}
+@media only screen and (max-width: 1449px) and (min-width: 950px), only screen and (min-width: 1450px){
     .email-form-title {
         max-width: none;
         padding: 0;
         font-size: 1.2rem;
     }
 }
+
+.nfTextField {
+    height: 48px;
+    padding: 10px 10px 0;
+    /* width: 100%; */
+    box-sizing: border-box;
+    font-size: 16px;
+    border: solid 1px #8c8c8c;
+    border-radius: 2px;
+    display: block;
+    color: #000;
+    font-family: inherit;
+    display: inline-block;
+    /* float:left; */
+}
+.nfTextField::placeholder {
+    color: #8c8c8c;
+}
+@media screen and (min-width: 740px){
+    .nfTextField {
+        height: 60px;
+    }
+    .nfTextField::placeholder {
+        font-size: 16px;
+    }
+}
+.btn-red{ 
+    background-color: #e50914;
+    cursor: pointer;
+    letter-spacing: .1px;
+    box-sizing: border-box;
+    border:none;
+    display:inline-block;
+    
+}
+.btn-txt,.btn-arrow{
+    color:#fff;
+}
+.btn-red.hover, .btn-red:focus, .btn-red:hover {
+    background: #f40612;
+    box-shadow: 0 1px 0 rgba(0,0,0,.45);
+}
+@media only screen and (min-width: 1450px){
+    input {
+        min-width: 500px;
+        height: 70px !important;
+    }    
+    .btn-red {       
+        min-height: 70px;
+        /* float:left; */
+    }
+    .btn-txt,.btn-arrow{
+        text-align: center;
+        font-size: 1.875rem;
+        color: #fff;
+        font-weight: 400;
+    }
+}
+.btn-arrow{
+    height: .75em;
+    width: .35em;
+    flex: 0 1 auto;
+    margin: 0 0 0 .5em;
+    position: relative;
+}
+.btn-txt,.btn-arrow{
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+@media only screen and (max-width: 1449px) and (min-width: 950px){
+    input {
+        width: 450px;
+        height: 60px;
+    }
+    .btn-red{
+        height: 60px;
+        padding:0px 26px;
+    }
+    .btn-txt,.btn-arrow{
+        font-size: 1.625rem;
+    }
+}
+@media only screen and (max-width: 1449px) and (min-width: 950px), only screen and (min-width: 1450px){
+    .btn-txt {
+        padding: .5rem 0;
+    }
+}
+@media only screen and (min-width: 1450px){
+    .btn-txt,.btn-arrow {
+        font-size: 1.875rem;
+    }
+    .btn-red{
+        min-height: 70px;
+        padding: 0 30px;
+        margin-left:-5px;
+    }
+}
+@media only screen and (min-width:950px){
+    .email-form{
+        display:table;
+        margin:0 auto;
+        border-spacing: 10px;
+    }
+    .email-btn-container{
+        display: table-header-group;
+    }
+    .email-form-title{
+        display: table-row-group;
+    }
+}
+@media only screen and (max-width: 949px) and (min-width: 550px){
+    .email-btn-container{
+        display:block;
+        margin:0 auto;
+    }
+    input{
+        display:block;
+        min-width:500px;
+        margin-top:16px;
+    }
+    .btn-red{
+        display:block;
+        margin:0 auto;
+        font-size: 1rem;
+        min-height: 40px;
+        margin-top:16px;
+    }
+}
+@media only screen and (max-width: 549px) and (min-width: 400px){
+    .email-btn-container{
+        display:block;
+        margin:0 auto;
+    }
+    input{
+        display:block;
+        width:100%;
+        height:48px;
+        margin-top:16px;
+    }
+    .btn-red{
+        display:block;
+        margin:0 auto;
+        font-size: 1rem;
+        min-height: 40px;
+        margin-top:16px;
+    }
+}
+@media only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px){
+    .email-btn-container{
+        display:block;
+        margin:0 auto;
+    }
+    input{
+        display:block;
+        width:100%;
+        height:48px;
+        margin-top:16px;
+    }
+    .btn-red{
+        display:block;
+        margin:0 auto;
+        font-size: 1rem;
+        min-height: 40px;
+        margin-top:16px;
+    }
+
+}
+
+
+
 
 
