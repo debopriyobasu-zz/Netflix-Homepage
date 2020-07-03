@@ -286,9 +286,17 @@ body{
         font-size: 4rem;
     }
 }
-@media only screen and (max-width: 949px) and (min-width: 550px), only screen and (max-width:1449px) and (min-width:950px) {
+@media only screen and (max-width:1449px) and (min-width:950px){
     .hero-card .our-story-card-title {
         font-size: 3.125rem;
+    }
+}
+@media only screen and (max-width: 949px) and (min-width: 550px){
+    .hero-card .our-story-card-title {
+        font-size: 3.125rem;
+    }
+    .our-story-card-title{
+        font-size: 2.5rem;
     }
 }
 @media only screen and (max-width: 550px){
@@ -302,9 +310,17 @@ body{
     margin: 1rem auto;
     font-weight: 400;
 }
-@media only screen and (max-width: 1449px) and (min-width: 950px), only screen and (min-width: 1450px),only screen and (max-width: 949px) and (min-width: 550px){
+@media only screen and (max-width: 1449px) and (min-width: 950px), only screen and (min-width: 1450px){
     .our-story-card-subtitle, .our-story-card-text {
         font-size: 1.625rem;
+    }
+}
+@media only screen and (max-width: 949px) and (min-width: 550px){
+    .our-story-card-subtitle, .our-story-card-text {
+        font-size: 1.625rem;
+    }
+    .our-story-card-subtitle{
+        font-size: 1.25rem;
     }
 }
 @media only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px){
@@ -546,28 +562,70 @@ h3 {
 }
 /* ---------------------------------------------------second page starts------------------------------------------------------------------ */
 @media only screen and (max-width: 949px) and (min-width: 550px), only screen and (max-width: 1449px) and (min-width: 950px), only screen and (min-width: 1450px){
-    .watchOnTv{
+    .watchOnTv,.downloadAndWatched{
         height:auto;
         display:block;
         font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
     }
+    
 }
-.animation-card,.animation-card-container{
+.watchOnTv{
     margin:0 auto;
-    max-width: 1100px;
+    text-align: center;
+}
+.downloadAndWatched{
+    text-align: center;
+    margin:0 auto;
+}
+.watchOnDevice{
+    margin:0 auto;
+    text-align: center;
 }
 .animation-card-container{
+    max-width: 1100px;
+    display: inline-block;
+}
+.animation-card{
+    margin: 0 auto;
+}
+/* .animation-card .animation-card-container{
     display:inline-block;
     background-color: #000;
-}
-.left-container{
+} */
+.watchOnTv .text-container{
     width:52%;
     height:100%;
     text-align: left;
     display:block;
     float:left;
 }
-.our-story-card-img-container{
+.watchOnTv .our-story-card-img-container{
+    width:48%;
+    height: 100%;
+    display: block;
+    float:right;
+}
+.downloadAndWatched .our-story-card-img-container{
+    width:48%;
+    height: 100%;
+    display: block;
+    float:left;
+}
+.downloadAndWatched .text-container{
+    width:52%;
+    height:100%;
+    text-align: left;
+    display:block;
+    float:right;
+}
+.watchOnDevice .text-container{
+    width:52%;
+    height:100%;
+    text-align: left;
+    display:block;
+    float:left;
+}
+.watchOnDevice .our-story-card-img-container{
     width:48%;
     height: 100%;
     display: block;
@@ -594,6 +652,38 @@ img{
 }
 video{
     object-fit:contain;
+}
+@media only screen and (max-width: 949px) and (min-width: 550px), only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px){
+    .animation-card-container{
+        width:100%;
+        display: block;
+        float: none;
+        text-align:center;
+    }
+    .animation-card .our-story-card-text{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        float: none;
+        display:block;
+    }
+    .animation-card .our-story-card-img-container,.animation-card .our-story-card-img{
+        float: none;
+        width: 100%;
+        height: auto;
+        border: 0;
+        text-align: center;
+        display:block;
+        margin:0 auto;
+        max-width: 600px;
+        margin-top: 1em;
+        
+    }
+}
+@media only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px){
+    .our-story-card-title {
+    font-size: 1.625rem;
+    }
 }
 
 
