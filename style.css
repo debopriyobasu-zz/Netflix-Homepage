@@ -356,6 +356,7 @@ h2{
 /* ---------------------------------------------------------email form---------------------------------------------------------------- */
 form {
     margin-top: 0em;
+    text-align: center;
 }
 @media only screen and (max-width: 1449px) and (min-width: 950px), only screen and (min-width: 1450px){
     .email-form {
@@ -685,7 +686,97 @@ video{
     font-size: 1.625rem;
     }
 }
+/* -----------------------------------------------------------footer---------------------------------------------------------------- */
+.our-story-card.our-story-card-no-border {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+.footer-card {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.site-footer {
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 90%;
+}
+.site-footer-wrapper {
+    min-width: 190px;
+    width: 100%;
+    margin-top: 80px;
+    padding-bottom: 20px;
+    font-size: 1em;
+    color: #757575;
+    position: relative;
+}
+.site-footer-wrapper {
+    margin-top: 0;
+}
+ul.structural{
+    padding: 0;
+    margin: 0;
+}
+ul.structural>li {
+    list-style: none;
+    margin-left: 0;
+}
+.structural{
+    display: block;
+}
+.footer-links{
+    font-size: 13px;
+    box-sizing: border-box;
+    display: block;
+}
+.footer-link {
+    color: #757575;
+}
+.footer-link-item {
+    box-sizing: border-box;
+    padding: 0;
+    margin:0 auto;
+    margin-bottom: 16px;
+    display: inline-block;
+    min-width: 100px;
+    padding-right: 12px;
+    vertical-align: top;
+}
+@media only screen and (min-width:741px){
+    .footer-link-item {
+        width: 24%;
+    }
+}
+@media only screen and (max-width: 740px){
+    .footer-link-item {
+            width: 32%;
+        }
+}
+@media only screen and (max-width: 500px){
+    .footer-link-item {
+        width: 49%; 
+    }
+}
 
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    /* color: #0071eb; */
+}
+a:hover{
+    text-decoration: underline;
+}
+.footer-top {
+    padding: 0;
+    margin: 0 0 30px;
+}
+.footer-top-a{
+    color: #757575;
+}
+.footer-country{
+    font-size: 13px;
+    margin-top: 24px;
+}
 
 
 
