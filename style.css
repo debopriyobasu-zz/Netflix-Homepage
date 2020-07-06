@@ -700,11 +700,9 @@ video{
 .faq-card .faq-list {
     margin: 1.25em auto;
     max-width: 815px;
+    padding-left:0px;
 }
-/* .faq-card ul{
-    list-style: none;
-    padding-left:0;
-} */
+
 .faq-card .faq-list-item {
     list-style-type: none;
     margin: 0 0 8px 0;
@@ -737,16 +735,29 @@ video{
     }
 }
 @media only screen and (max-width: 949px) and (min-width: 550px){
-    .faq-question, .faq-answer {
+    .faq-question, .faq-answer{
     font-size: 1.25rem;
     }
 }
 @media only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px){
-    .faq-question,.faq-answer {
+    .faq-question,.faq-answer{
     font-size: 1.125rem;
     }
+    .faq-card{
+        width:100%;
+        margin:0 auto;
+    }
+    .our-story-card{
+        padding-left:0px;
+        padding-right:0px;
+    }
 }
-
+.faq-answer{
+    display: none;
+}
+.faq-answer.active{
+    display: block;
+} 
 
 /* -----------------------------------------------------------footer---------------------------------------------------------------- */
 .our-story-card.our-story-card-no-border {
