@@ -747,17 +747,20 @@ video{
         width:100%;
         margin:0 auto;
     }
+    .faq-card .email-form {
+        padding: 0 5%;
+    }
     .our-story-card{
         padding-left:0px;
         padding-right:0px;
     }
 }
-.faq-answer{
+.faq-card .faq-answer{
     display: none;
 }
-.faq-answer.active{
+/* .faq-card .faq-answer.active{
     display: block;
-} 
+}  */
 
 /* -----------------------------------------------------------footer---------------------------------------------------------------- */
 .our-story-card.our-story-card-no-border {
