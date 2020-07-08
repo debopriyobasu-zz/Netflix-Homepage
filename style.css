@@ -708,7 +708,7 @@ video{
     margin: 0 0 8px 0;
 }
 .faq-card .faq-question {
-    padding: .8em 2.2em .8em 1.2em;
+    padding: .8em 1.2em .8em 1.2em;
     margin-bottom: 1px;
     font-weight: 400;
     position: relative;
@@ -750,7 +750,7 @@ video{
     .faq-card .email-form {
         padding: 0 5%;
     }
-    .our-story-card{
+    .faq-card.our-story-card{
         padding-left:0px;
         padding-right:0px;
     }
@@ -761,7 +761,11 @@ video{
 /* .faq-card .faq-answer.active{
     display: block;
 }  */
-
+.plus{
+    float:right;
+    /* width:1.5em;
+    height:1.5em; */
+}
 /* -----------------------------------------------------------footer---------------------------------------------------------------- */
 .our-story-card.our-story-card-no-border {
     border-bottom: none;
