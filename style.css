@@ -564,6 +564,13 @@ h3 {
     }
 
 }
+/* .email-form .inputError {
+    color: #ffa00a;
+    text-align: left;
+    margin-bottom: -6px;
+    padding: 6px 3px;
+    font-size: 15px;
+} */
 /* ---------------------------------------------------second page starts------------------------------------------------------------------ */
 @media only screen and (max-width: 949px) and (min-width: 550px), only screen and (max-width: 1449px) and (min-width: 950px), only screen and (min-width: 1450px){
     .watchOnTv,.downloadAndWatched{
@@ -753,7 +760,6 @@ img{
     display: block;
 }  */
 .cross{
-    display:none;
     position:absolute;
     right:15px; 
     transform: scale(1.5) rotate(45deg);
